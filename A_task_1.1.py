@@ -9,3 +9,7 @@ my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start M
 my_favorite_songs = ['Waste a Moment', 'Staying\' Alive', 'A Sorta Fairytale', 'Start Me Up', 'New Salvation']
 a, b, c, d, e = ['Waste a Moment', 'Staying\' Alive', 'A Sorta Fairytale', 'Start Me Up', 'New Salvation']
 print(a, e, b, d)
+
+# Прошу обратить ваше внимание, что переопределять переменную my_favorite_songs нельзя!
+# от строки к списку можно перейти, использовав соответствующий метод. 
+# Дополните пожайлуйста задачу.
