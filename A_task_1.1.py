@@ -7,5 +7,13 @@ my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start M
 # Выведите на консоль с помощью индексации строки, последовательно: первый трек, последний, второй, второй с конца
 # Нельзя переопределять my_favorite_songs и запятая не должна выводиться.
 my_favorite_songs = ['Waste a Moment', 'Staying\' Alive', 'A Sorta Fairytale', 'Start Me Up', 'New Salvation']
-a, b, c, d, e = ['Waste a Moment', 'Staying\' Alive', 'A Sorta Fairytale', 'Start Me Up', 'New Salvation']
-print(a, e, b, d)
+len(my_favorite_songs)
+print(my_favorite_songs[0] , end=' ')
+print(my_favorite_songs[4] , end=' ')
+print(my_favorite_songs[1] , end=' ')
+print(my_favorite_songs[3])
+
+ 
+
+
+
