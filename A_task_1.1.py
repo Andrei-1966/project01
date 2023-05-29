@@ -13,7 +13,6 @@ print(my_favorite_songs[4] , end=' ')
 print(my_favorite_songs[1] , end=' ')
 print(my_favorite_songs[3])
 
- 
-
-
+# К сожалению, переопределять переменную my_favorite_songs нельяз по услвоию задачи!
+# Постарайтесь перейти от строки my_favorite_songs к списку с помощью метода для строк!
 
