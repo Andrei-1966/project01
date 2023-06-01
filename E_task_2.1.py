@@ -16,39 +16,81 @@ def minimum(arr):
 def maximum(arr):
     pass
 
+#UPDATED Version
+#arr = [[4,6,2,1,9,63,-134,566],[-52, 56, 30, 29, -54, 0, -110],[42, 54, 65, 87, 0],[5]]
 
-arr = [[4,6,2,1,9,63,-134,566],[-52, 56, 30, 29, -54, 0, -110],[42, 54, 65, 87, 0],[5]]
+# List #1
+arr = [4,6,2,1,9,63,-134,566]
+n = len(arr)
+x = arr
+def minimum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+          x[j], x[j+1] = x[j+1], x[j] 
+    return x[0]
+def maximum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+        x[j], x[j+1] = x[j+1], x[j] 
+    return x[7]
 
-n = len(arr[0])
-#print(n)
-#print(arr[0])
-x = arr[0]
-#print(x)
+print('в массиве',arr , ' -> min = ', minimum(x),'max =', maximum(x))   
 
-for i in range(n-1):
-  for j in range(n-i-1):
-    if x[j] > x[j+1]:
-     x[j], x[j+1] = x[j+1], x[j] 
-print('в массиве',arr[0] , ' -> min = ',x[0],'max =', x[7])   
+# List #2
+arr2 =[-52, 56, 30, 29, -54]
+n = len(arr2)
+x = arr2
+def minimum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+          x[j], x[j+1] = x[j+1], x[j] 
+    return x[0]
+def maximum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+        x[j], x[j+1] = x[j+1], x[j] 
+    return x[4]
 
-n =len(arr[1])
-h = arr[1]
-#print(h)
-for i in range(n-1):
-  for j in range(n-i-1):
-   if h[j] > h[j+1]:
-     h[j], h[j+1] = h[j+1], h[j]             
-print('в массиве',arr[1], ' -> min = ',h[0],'max =',h[6]) 
+print('в массиве',arr2 , ' -> min = ', minimum(x),'max =', maximum(x))   
 
-n = len(arr[2])
-z = arr[2]
-#print(z)   
-for i in range(n-1):
-  for j in range(n-i-1):
-    if z[j] > z[j+1]:
-     z[j], z[j+1] = z[j+1], z[j]             
-print('в массиве',arr[2], ' -> min = ',z[0],'max =',z[4]) 
+# List #2
+arr3 =[42, 54, 65, 87, 0]
+n = len(arr3)
+x = arr3
+def minimum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+          x[j], x[j+1] = x[j+1], x[j] 
+    return x[0]
+def maximum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+        x[j], x[j+1] = x[j+1], x[j] 
+    return x[4]
 
-k = arr[3]
-#print(k)              
-print('в массиве',arr[3], ' -> min = ',k[0],'max =',k[0]) 
+print('в массиве',arr3 , ' -> min = ', minimum(x),'max =', maximum(x))   
+
+# List #4
+arr4 =[5]
+n = len(arr4)
+x = arr4
+def minimum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+          x[j], x[j+1] = x[j+1], x[j] 
+    return x[0]
+def maximum(x):
+    for i in range(n-1):
+     for j in range(n-i-1):
+       if x[j] > x[j+1]:
+        x[j], x[j+1] = x[j+1], x[j] 
+    return x[0]
+
+print('в массиве',arr4 , ' -> min = ', minimum(x),'max =', maximum(x))   
