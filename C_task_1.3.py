@@ -16,35 +16,17 @@
     # Введите номер месяца: 15
     # Такого месяца нет!
 
-
 user_input = input('Введите номер месяца:')
-# make the list of months/numbers
-month = int(user_input)
-if month == 1:
-    print('Вы ввели Январь ,', end='')
-if month == 2:
-    print('Вы ввели Февраль ,', end='')
-if month == 3:
-    print('Вы ввели Март ,', end='')    
-if month == 4:
-    print('Вы ввели Апрель ,', end='')
-if month == 5:
-    print('Вы ввели Май ,', end='')
-if month == 6:
-    print('Вы ввели Июнь ,', end='')
-if month == 7:
-    print('Вы ввели Июль ,', end='')
-if month == 8:
-    print('Вы ввели Август ,', end='')
-if month == 9:
-    print('Вы ввели Сентябрь ,', end='')    
-if month == 10:
-    print('Вы ввели Октябрь ,', end='')
-if month == 11:
-    print('Вы ввели Ноябрь ,', end='')
-if month == 12:
-    print('Вы ввели Декабрь ,', end='')
+# make the dict of months/numbers
+months_name = {'Январь': 1, 'Февраль': 2, 'Март': 3, 
+              'Апрель': 4,'Май': 5, 'Июнь': 6, 
+             'Июль': 5 , 'Август': 6, 'Сентябрь': 7,
+            'Октябрь': 10, 'Ноябрь': 11, 'Декабрь': 12}
 
+for key, month in months_name.items():
+    if month == int(user_input):
+        print('Вы ввели', key,',', end='')
+    
 # months by days q-ty 
 month_31 = [1,3,5,7,8,10,12]
 month_30 = [4,6,9,11]
@@ -58,13 +40,16 @@ for x in month_30:
         print('в этом месяце 30 дней',end= '') 
 for i in month_31:
     if month == i:
-        print('в этом месяце 31 дней',end='')
+        print('в этом месяце 31 день',end='')
 
-if month >= 13:
-    print('Вы ошиблись, нет такого месяца!',end='' )    
-                                                                
-
-                       
+if int(user_input) != month_31 or month_30 and month_28 :
+       print('Вы ошиблись, нет такого месяца!', end='' )    
+    
+                                                            
+# Comment of Superviser:
+#    # Довольно много if. Постарайтесь переформировать код покороче      
+# 
+# UPDATED               
  
 
 
